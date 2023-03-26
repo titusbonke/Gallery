@@ -33,10 +33,6 @@ $UrlRow=mysqli_fetch_assoc($result);
 // print_r($UrlRow);
 $EventRows[$key]["ImgUrl"]=$UrlRow["img_img"];
 }
-
-
-
-
 // Close the database connection
 mysqli_close($conn);
 ?>
@@ -53,11 +49,14 @@ mysqli_close($conn);
 
         echo'        <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
+        <a href="Images_All.php?Id='.$Event['g_id'].'">
             <div class="bg-white rounded shadow-sm p-3">
-                <img src="'.$Event['g_title'].'" alt="" width="90%" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm img-zoom-hover">
+                <img src="'.$Event['ImgUrl'].'" alt="" width="90%" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm img-zoom-hover">
                 <h5 class="mb-0">'.$Event['g_title'].'</h5><span class="small text-uppercase text-muted">'.date('M - Y', strtotime($Event['g_timestamp'])).'</span>
             </div>
-        </div><!-- End -->
+            </a>
+        </div>
+        <!-- End -->
 ';
 
     }
