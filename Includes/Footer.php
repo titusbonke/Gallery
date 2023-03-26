@@ -1,3 +1,13 @@
+<style>
+    .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+</style>
+
 <!-- <div class="btn-download">
     <a class="btn btn-success px-3 py-2"
         href="https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/"
