@@ -1,6 +1,4 @@
 <?php include("Includes/Header.php")?>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <style>
     .img-zoom-hover{
         transition: transform 0.3s ease-in-out;
@@ -50,8 +48,8 @@ mysqli_close($conn);
         echo'        <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
         <a href="Images_All.php?Id='.$Event['g_id'].'">
-            <div class="bg-white rounded shadow-sm p-3">
-                <img src="'.$Event['ImgUrl'].'" alt="" width="90%" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm img-zoom-hover">
+            <div class="card   rounded shadow-sm px-3 py-5">
+                <img src="'.$Event['ImgUrl'].'" alt="" width="100%" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm img-zoom-hover">
                 <h5 class="mb-0">'.$Event['g_title'].'</h5><span class="small text-uppercase text-muted">'.date('M - Y', strtotime($Event['g_timestamp'])).'</span>
             </div>
             </a>
@@ -65,7 +63,7 @@ mysqli_close($conn);
     ?>
 
 <?php
-     print_r($EventRows)
+    //  print_r($EventRows)
 
     ?>
 

@@ -44,13 +44,13 @@
                 <!-- Sidebar Menu Start -->
                 <ul class="navbar-nav iq-main-menu" id="sidebar-menu">
                     <li class="nav-item static-item">
-                        <a class="nav-link static-item disabled" href="#" tabindex="-1">
+                        <a class="nav-link static-item disabled" href="../Gallery" tabindex="-1">
                             <span class="default-icon">Home</span>
                             <span class="mini-icon">-</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../dashboard/index.html">
+                        <a class="nav-link active" aria-current="page" href="../Gallery">
                             <i class="icon">
                                 <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-20">
                                     <path opacity="0.4" d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z" fill="currentColor"></path>
@@ -93,7 +93,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/index-horizontal.html">
+                                <a class="nav-link " href="../Gallery/ImagesAll.php">
                                   <i class="icon">
                                         <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -108,7 +108,7 @@
                         </ul>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="https://templates.iqonic.design/hope-ui/html/dist/" target="_blank">
+                        <a class="nav-link" aria-current="page" href="../Gallery/UploadImages.php" >
                             <i class="icon">
                                  <svg class="icon-20" width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9964 8.37513H17.7618C15.7911 8.37859 14.1947 9.93514 14.1911 11.8566C14.1884 13.7823 15.7867 15.3458 17.7618 15.3484H22V15.6543C22 19.0136 19.9636 21 16.5173 21H7.48356C4.03644 21 2 19.0136 2 15.6543V8.33786C2 4.97862 4.03644 3 7.48356 3H16.5138C19.96 3 21.9964 4.97862 21.9964 8.33786V8.37513ZM6.73956 8.36733H12.3796H12.3831H12.3902C12.8124 8.36559 13.1538 8.03019 13.152 7.61765C13.1502 7.20598 12.8053 6.87318 12.3831 6.87491H6.73956C6.32 6.87664 5.97956 7.20858 5.97778 7.61852C5.976 8.03019 6.31733 8.36559 6.73956 8.36733Z" fill="currentColor"></path>
@@ -117,7 +117,9 @@
                                 </svg>
                                                          
                             </i>
-                            <span class="item-name">Design System<span class="badge rounded-pill bg-success item-name">UI</span></span>
+                            <span class="item-name">Image Upload
+                                <!-- <span class="badge rounded-pill bg-success item-name">UI</span> -->
+                            </span>
                         </a>
                     </li>
                     <li><hr class="hr-horizontal"></li>
