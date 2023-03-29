@@ -7,6 +7,10 @@
     }
     .card:hover{
         transform: scale(1.1);
+        cursor: pointer;
+    }
+    .modal-xl{
+        max-width: 130vh !important;
     }
 </style>
 
@@ -17,8 +21,8 @@
 <?php
 // Include the database connection file
 include('Includes/db_connection.php');
-$Id=$_GET["Id"];
-if (!empty($Id)) {
+if (isset($_GET['Id'])) {
+    $Id=$_GET["Id"];
     $sql = 'SELECT * FROM `erp_img`WHERE g_id='.$Id.' ORDER BY img_id ASC';
 } else {
     $sql = 'SELECT * FROM `erp_img` ORDER BY img_id ASC';
