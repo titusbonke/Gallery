@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['fileToUpload'])) {
         $ImageDesc = $_POST['ImageDesc'];
     }
 
-     echo $Evnet.$ImageDesc;
+    //  echo $Evnet.$ImageDesc;
 
     // perform some validation and processing on the uploaded file
 

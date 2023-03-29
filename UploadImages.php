@@ -62,7 +62,7 @@ mysqli_close($conn);
             <button type="submit" class="btn btn-primary" >Upload</button>
         </form>
 
-        <div id="Result">
+        <div id="Result" class="m-3">
 
         </div>
 
