@@ -3,6 +3,9 @@
     .img-zoom-hover {
         transition: transform 0.3s ease-in-out;
     }
+    .card {
+        transition: all 0.3s ease-in;
+    }
 
     .img-zoom-hover:hover {
         transform: scale(1.1);
@@ -11,6 +14,11 @@
     .card img {
         height: 140px !important;
     }
+    .card:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
 </style>
 <div class="container p-3">
 

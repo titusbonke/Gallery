@@ -23,8 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['fileToUpload'])) {
 
                 // Include the database connection file
                 include('Includes/db_connection.php');
+                // generate a unique file name based on the current timestamp and the original file name
+                $new_file_name = time() . '_' . $_FILES["fileToUpload"]["name"];
                 // insert a row into the table
-                $sql = "INSERT INTO erp_img (g_id, img_img, img_desc) VALUES ('" . $Evnet . "', '" . "img/" . $_FILES["fileToUpload"]["name"] . "', '" . $ImageDesc . "')";
+                $sql = "INSERT INTO erp_img (g_id, img_img, img_desc) VALUES ('" . $Evnet . "', '" . "img/" . $new_file_name . "', '" . $ImageDesc . "')";
 
                 if (!mysqli_query($conn, $sql)) {
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
@@ -32,9 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['fileToUpload'])) {
 
                 // Close the database connection
                 mysqli_close($conn);
-
-
-                move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "img/" . $_FILES["fileToUpload"]["name"]);
+                //uploading file
+                move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "img/" . $new_file_name);
                 echo "File uploaded successfully!";
             } else {
                 // file has an invalid type
