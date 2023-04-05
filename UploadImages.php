@@ -14,7 +14,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     // Do something with each row
     array_push($EventRows,$row);
 }
-print_r($EventRows);
+// print_r($EventRows);
 // Close the database connection
 mysqli_close($conn);
 ?>
@@ -56,7 +56,7 @@ mysqli_close($conn);
             </div>
             <div class="form-group">
                 <label class="p-2">Select File </label>
-                <input class="form-control" type="file" name="fileToUpload">
+                <input class="form-control" type="file" name="fileToUpload[]" multiple>
             </div>
             <button type="submit" class="btn btn-primary" >Upload</button>
         </form>
@@ -93,8 +93,8 @@ mysqli_close($conn);
                 contentType: false,
                 success: function (response) {
                     console.log(response);
-                    if (response == "File uploaded successfully!") {
-                        $("#Result").html(`<div class="alert alert-success fade show" role="alert"> ${response}</div>`);
+                    if (response == "OK") {
+                        $("#Result").html(`<div class="alert alert-success fade show" role="alert"> All Images has been Uploaded successfully </div>`);
                     } else {
                         $("#Result").html(`<div class="alert alert-danger fade show" role="alert"> ${response}</div>`);
                     }

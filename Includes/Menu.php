@@ -89,7 +89,7 @@
                                         </svg>
                                     </i>
                                   <i class="sidenav-mini-icon">  </i>
-                                  <span class="item-name"> Events </span>
+                                  <span class="item-name"> Manage Events </span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -102,7 +102,7 @@
                                         </svg>
                                     </i>
                                   <i class="sidenav-mini-icon">  </i>
-                                  <span class="item-name"> All Images </span>
+                                  <span class="item-name"> Manage Images </span>
                                 </a>
                             </li>
                         </ul>
