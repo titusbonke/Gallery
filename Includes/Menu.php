@@ -1,3 +1,10 @@
+<?php
+if(isset($_GET["Menu"])){
+ $Menu=$_GET["Menu"]; 
+}else{
+    $Menu="";
+}
+ ?>
 <aside class="sidebar sidebar-default sidebar-white sidebar-base navs-rounded-all ">
         <div class="sidebar-header d-flex align-items-center justify-content-start">
             <a href="../dashboard/index.html" class="navbar-brand">
@@ -80,7 +87,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="horizontal-menu" data-bs-parent="#sidebar-menu">
                             <li class="nav-item">
-                                <a class="nav-link " href="../Gallery/Images_Events.php">
+                                <a class="nav-link <?php echo $Menu=="ManageEvents"?"active":"" ?>" href="../Gallery/Images_Events.php?Menu=ManageEvents">
                                   <i class="icon">
                                         <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -93,7 +100,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../Gallery/Images_All.php">
+                                <a class="nav-link <?php echo $Menu=="ManageImages"?"active":"" ?>" href="../Gallery/Images_All.php?Menu=ManageImages">
                                   <i class="icon">
                                         <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>

@@ -44,11 +44,11 @@ mysqli_close($conn);
                     ?>
                 </select>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="ImageName" required="required">Image Name (Optional)</label>
                 <input type="text" name="ImageName" class="form-control" id="ImageName" aria-describedby="ImageName"
                     placeholder="">
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="ImageDesc" required="required">Image Desc</label>
                 <input type="text" name="ImageDesc" class="form-control" id="ImageDesc" aria-describedby="ImageDesc"
@@ -75,12 +75,12 @@ mysqli_close($conn);
 
             var formData = new FormData(this);
             var selectedEvent = $('#Evnet').val(); // get selected value
-            var ImageName = $('#ImageName').val(); // get selected value
+            // var ImageName = $('#ImageName').val(); // get selected value
             var ImageDesc = $('#ImageDesc').val(); // get selected value
 
             // add selected value to formData
             formData.append('Evnet', selectedEvent);
-            formData.append('ImageName', ImageName);
+            // formData.append('ImageName', ImageName);
             formData.append('ImageDesc', ImageDesc);
 
             console.log(formData)

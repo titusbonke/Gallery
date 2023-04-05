@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 05, 2023 at 04:57 AM
+-- Generation Time: Apr 05, 2023 at 06:22 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -374,16 +374,19 @@ INSERT INTO `erp_img` (`img_id`, `g_id`, `img_img`, `img_desc`) VALUES
 (1, 1, 'img/sportsday.jpg', 'principal addressing'),
 (2, 1, 'img/sportsday2.jpg', 'chairman addressing'),
 (3, 2, 'img/collegeday.jpg', 'principal addressing'),
-(5, 4, 'img/collegeImg.jpg', 'testac'),
 (6, 2, 'img/collegeImg.jpg', 'test'),
-(7, 2, 'img/collegeImg.jpg', 'test'),
+(7, 3, 'img/collegeImg.jpg', 'test'),
 (8, 2, 'img/collegeImg.jpg', 'test'),
 (9, 2, 'img/collegeImg.jpg', 'test'),
 (10, 2, 'img/collegeImg.jpg', 'test'),
 (11, 6, 'img/collegeImg.jpg', 'test56'),
 (12, 2, 'img/collegeImg.jpg', 'test'),
 (13, 2, 'img/collegeImg.jpg', 'test'),
-(14, 2, 'img/collegeImg.jpg', 'test');
+(14, 2, 'img/collegeImg.jpg', 'test'),
+(24, 4, 'img/1680667089_collegedve.jpg', 'testing multiple files '),
+(25, 4, 'img/1680667089_Collegea2e.jpg', 'testing multiple files '),
+(26, 4, 'img/1680667089_Collegea1.jpg', 'testing multiple files1'),
+(27, 6, 'img/1680667418_collegedve.jpg', 'test single file');
 
 -- --------------------------------------------------------
 
@@ -954,7 +957,7 @@ ALTER TABLE `erp_hostel`
 -- AUTO_INCREMENT for table `erp_img`
 --
 ALTER TABLE `erp_img`
-  MODIFY `img_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Image id', AUTO_INCREMENT=16;
+  MODIFY `img_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Image id', AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `erp_leave`
